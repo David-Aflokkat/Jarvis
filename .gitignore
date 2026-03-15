@@ -2,16 +2,19 @@
 models/
 *.gguf
 *.bin
+!models/README.md
 
 # Mémoires personnelles (données utilisateur)
 memory/*.md
 memory/*.json
+!memory/README.md
 
 # Fichiers vocaux (droits d'auteur + données perso)
 assets/
 *.wav
 *.mp3
 *.flac
+!assets/README.md
 
 # Python
 __pycache__/
