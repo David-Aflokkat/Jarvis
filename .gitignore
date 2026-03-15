@@ -1,20 +1,21 @@
 # Modèles LLM (trop lourds pour Git)
-models/
-*.gguf
-*.bin
+models/**
 !models/README.md
 
 # Mémoires personnelles (données utilisateur)
-memory/*.md
-memory/*.json
+memory/**
 !memory/README.md
 
 # Fichiers vocaux (droits d'auteur + données perso)
-assets/
+assets/**
+!assets/README.md
+
+# Extensions de fichiers lourds/privés
+*.gguf
+*.bin
 *.wav
 *.mp3
 *.flac
-!assets/README.md
 
 # Python
 __pycache__/
@@ -24,7 +25,7 @@ __pycache__/
 venv/
 *.egg-info/
 
-# Config locale (peut contenir des chemins perso)
+# Config locale
 config.toml
 
 # OS
