@@ -1,0 +1,23 @@
+# Modèles LLM (trop lourds pour Git)
+models/
+*.gguf
+*.bin
+
+# Mémoires personnelles (données utilisateur)
+memory/*.md
+memory/*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Config locale (peut contenir des chemins perso)
+config.local.toml
+
+# OS
+.DS_Store
+Thumbs.db
