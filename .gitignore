@@ -7,6 +7,12 @@ models/
 memory/*.md
 memory/*.json
 
+# Fichiers vocaux (droits d'auteur + données perso)
+assets/
+*.wav
+*.mp3
+*.flac
+
 # Python
 __pycache__/
 *.pyc
@@ -16,7 +22,7 @@ venv/
 *.egg-info/
 
 # Config locale (peut contenir des chemins perso)
-config.local.toml
+config.toml
 
 # OS
 .DS_Store

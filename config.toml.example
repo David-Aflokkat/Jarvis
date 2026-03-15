@@ -1,0 +1,31 @@
+[model]
+path = "models/your-model.gguf"
+n_gpu_layers = 99
+context_size = 4096
+temperature = 0.7
+top_p = 0.9
+
+[chat]
+system_prompt = "{write your first prompt here to guide the behaviour of your personnal AI}"
+max_tokens = 512
+stream = true
+
+[voice]
+enabled = false
+mode = "full"
+
+[voice.stt]
+model = "base"
+language = "fr"
+device = "mps"
+
+[voice.tts]
+model = "tts_models/multilingual/multi-dataset/xtts_v2"
+speaker_wav = "{path to your voice sample}"
+language = "fr"
+speed = 1.1
+
+[memory]
+enabled = true
+auto_save = false
+memory_dir = "memory"
